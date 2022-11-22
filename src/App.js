@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import {MainContainer} from "./styles";
+import {CardSelector, Logo, Question, Footer, WatchMovie} from "./components";
+import {useState} from "react";
 
 function App() {
+  let [question, setQuestion] = useState(1);
+  let [text, setText] = useState("Choose one of the three movies");
+  let [imdb, setImdb] = useState();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <MainContainer>
+        <Logo>Your Logo</Logo>
+        {imdb === undefined ? 
+        <>
+        <Question question={question}/>
+        <h1>{text}</h1>
+        <CardSelector question={question} setQuestion={setQuestion} text={text} setText={setText}  setImdb={setImdb}/>
+        </>
+        : <WatchMovie imdb={imdb}/>
+      
+      }
+      <Footer/>
+    </MainContainer>
   );
 }
 
-export default App;
+export {App};
