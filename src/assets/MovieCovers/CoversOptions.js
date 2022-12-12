@@ -60,7 +60,26 @@ const blondeOption = [
 			'https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg',
 	}
 ];
-
+const minionsOption = [
+	{
+		key: 1,
+		title: 'Poker Face',
+		cover:
+			'https://prod.cdn.bbaws.net/TDC_Blockbuster_-_Production/672/464/4280010755-po-reg-medium_orig-1669197393737.jpg',
+	},
+	{
+		key: 2,
+		title: 'Avatar: The Way of Water',
+		cover:
+			'https://m.media-amazon.com/images/M/MV5BYjhiNjBlODctY2ZiOC00YjVlLWFlNzAtNTVhNzM1YjI1NzMxXkEyXkFqcGdeQXVyMjQxNTE1MDA@._V1_FMjpg_UX1000_.jpg',
+	},
+	{
+		key: 3,
+		title: 'Black Adam',
+		cover:
+			'https://m.media-amazon.com/images/M/MV5BYzZkOGUwMzMtMTgyNS00YjFlLTg5NzYtZTE3Y2E5YTA5NWIyXkEyXkFqcGdeQXVyMjkwOTAyMDU@._V1_.jpg',
+	}
+];
 const thirdPage = [
 	{
 		key: 1,
@@ -84,4 +103,4 @@ const thirdPage = [
 	}
 ];
 
-export { firstSelection, grayManOption, blondeOption, thirdPage };
+export { firstSelection, grayManOption, blondeOption,minionsOption, thirdPage };

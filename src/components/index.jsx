@@ -1,7 +1,7 @@
-import {CardSelector} from "./CardSelector";
-import {Logo} from "./Logo";
-import {Question} from "./Question";
-import {Footer} from "./Footer";
-import {WatchMovie} from "./WatchMovie";
+import {MovieSelector} from "./cardSelector";
+import {Logo} from "./logo";
+import {QuestionSelector} from "./questionSelector";
+import {Footer} from "./footer";
+import {WatchMovie} from "./watchMovie";
 
-export{CardSelector, Logo,Question,WatchMovie, Footer};
+export{MovieSelector, Logo,QuestionSelector,WatchMovie, Footer};

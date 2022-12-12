@@ -1,6 +1,6 @@
 import styled from "styled-components"; 
 
-const Foot = styled.div`
+const FooterInfo = styled.div`
 	display: flex;
 	position: absolute;
 	bottom: 0;
@@ -9,4 +9,4 @@ const Foot = styled.div`
 		padding:0px 10px;
 	}
 `;
-export {Foot};
+export {FooterInfo};

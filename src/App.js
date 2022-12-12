@@ -1,5 +1,5 @@
 import {MainContainer} from "./styles";
-import {CardSelector, Logo, Question, Footer, WatchMovie} from "./components";
+import {MovieSelector, Logo, QuestionSelector, Footer, WatchMovie} from "./components";
 import {useState} from "react";
 
 function App() {
@@ -12,12 +12,11 @@ function App() {
         <Logo>Your Logo</Logo>
         {imdb === undefined ? 
         <>
-        <Question question={question}/>
+        <QuestionSelector question={question}/>
         <h1>{text}</h1>
-        <CardSelector question={question} setQuestion={setQuestion} text={text} setText={setText}  setImdb={setImdb}/>
+        <MovieSelector question={question} setQuestion={setQuestion} text={text} setText={setText}  setImdb={setImdb}/>
         </>
         : <WatchMovie imdb={imdb}/>
-      
       }
       <Footer/>
     </MainContainer>

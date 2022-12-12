@@ -1,19 +1,17 @@
-import {Ques, Radio} from "./styles";
+import {Questions, RadioButton} from "./styles";
 
-function Question(props){
-
+function QuestionSelector(props){
     const {question} = props;
+
     return(
-        <>
-            <Ques>Question {question} of 3 :
-                <Radio>
+            <Questions>Question {question} of 3 :
+                <RadioButton>
                     <input type="radio" checked={question === 1 ? true: false}/>
                     <input type="radio" checked={question === 2 ? true: false}/>
                     <input type="radio" checked={question === 3 ? true: false}/>
-                </Radio>
-            </Ques>
-            </>
+                </RadioButton>
+            </Questions> 
     )
 }
 
-export{Question};
+export{QuestionSelector};

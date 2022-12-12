@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 
-const Ques = styled.h1`
+const Questions = styled.h1`
     width: 300px;
     background: white;
     border-radius: 10px;
@@ -14,7 +14,7 @@ const Ques = styled.h1`
     align-items: center;
 `;
 
-const Radio = styled.div`
+const RadioButton = styled.div`
     margin-top:5px;
     color: #22DAA8;
     background: white;
@@ -40,4 +40,4 @@ const Radio = styled.div`
     }
 `;
 
-export {Ques, Radio};
+export {Questions, RadioButton};

@@ -1,11 +1,11 @@
-import {Foot} from "./styles";
+import {FooterInfo} from "./styles";
 
 function Footer(){
     return(
-        <Foot>
+        <FooterInfo>
 		<p>Privacy Policy</p>
         <p>Terms of Use</p>   
-        </Foot>
+        </FooterInfo>
     )
 }
 
