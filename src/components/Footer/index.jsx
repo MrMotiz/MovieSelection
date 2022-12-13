@@ -1,10 +1,10 @@
-import {FooterInfo} from "./styles";
+import {FooterInfo, FooterLink} from "./styles";
 
 function Footer(){
     return(
         <FooterInfo>
-		<p>Privacy Policy</p>
-        <p>Terms of Use</p>   
+		<FooterLink>Privacy Policy</FooterLink>
+        <FooterLink>Terms of Use</FooterLink>   
         </FooterInfo>
     )
 }

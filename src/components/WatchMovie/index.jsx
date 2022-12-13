@@ -1,18 +1,14 @@
-import {WatchMoreMenu, WatchMoreButton} from "./styles";
+import {WatchMoreMenu,Title,SecondTitle, WatchMoreButton} from "./styles";
 
 function WatchMovie(props){
     const {imdb} = props;
 
-    function handleClick(){
-        window.location.href= imdb;
-    }
-
     return(
         <WatchMoreMenu>
-            <h1>WATCH NEW MOVIES FOR FREE!</h1>
-            <p>Watch any movies online for free without ads!</p>
-            <p>Have fun watching your favourite movies!</p>
-            <WatchMoreButton onClick={()=>handleClick()}>WATCH HERE!</WatchMoreButton>
+            <Title>WATCH NEW MOVIES FOR FREE!</Title>
+            <SecondTitle>Watch any movies online for free without ads!</SecondTitle>
+            <SecondTitle>Have fun watching your favourite movies!</SecondTitle>
+            <WatchMoreButton onClick={()=>window.location.href= imdb}>WATCH HERE!</WatchMoreButton>
         </WatchMoreMenu>
     )
 }

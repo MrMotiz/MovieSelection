@@ -11,12 +11,6 @@ const WatchMoreMenu = styled.div`
     color: black;
     border-radius: 10px;
     border: 10px solid #22DAA8;
-    h1{
-        color: #22DAA8;
-    }
-    p{
-        font-size: 25px;
-    }
 `;
 
 const WatchMoreButton = styled.button`
@@ -36,5 +30,13 @@ const WatchMoreButton = styled.button`
     }
 `;
 
+const Title = styled.h1`
+    color: #22DAA8;
+`;
 
-export {WatchMoreMenu, WatchMoreButton}
+const SecondTitle = styled.h2`
+     font-size: 25px;
+     font-weight: normal;
+`;
+
+export {WatchMoreMenu,Title,SecondTitle, WatchMoreButton}

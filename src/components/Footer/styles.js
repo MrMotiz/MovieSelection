@@ -5,8 +5,9 @@ const FooterInfo = styled.div`
 	position: absolute;
 	bottom: 0;
   	color: gray;
-	p{
-		padding:0px 10px;
-	}
 `;
-export {FooterInfo};
+
+const FooterLink = styled.p`
+	padding:0px 10px;
+`;
+export {FooterInfo, FooterLink};
